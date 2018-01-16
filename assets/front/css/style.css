@@ -1,0 +1,7 @@
+#crop_tool {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px dashed #fff;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
