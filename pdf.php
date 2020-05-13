@@ -16,21 +16,21 @@ $divimg = "
 <head>
     <title>Hello, world!</title>
     <style>
-   
+
 table {
     border-collapse: collapse;
-    width: 100%;
-    
-    
-    
 }
 th, td {
-    
-    border-bottom: 1px solid black;
-    padding: 1mm;
-    
+
+    border: 1px solid dashed;
+    padding: 3mm;
+
 }
 img {
+    width: 40mm;
+    height: 50mm;
+}
+.norm {
     width: 40mm;
     height: 50mm;
 }
@@ -41,49 +41,43 @@ img {
 <table >
     <tbody>
         <tr >
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
         </tr>
+
         <tr >
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
         </tr>
+
         <tr >
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
         </tr>
+
         <tr >
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
         </tr>
+
         <tr >
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            <td ><img src='src/uploads/$imgname'></td>
-            
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
+            <td ><img src='src/uploads/$imgname' class='norm'></td>
         </tr>
-        
-        
-        
-        
+
+
+
+
     </tbody>
 </table>
 </body>

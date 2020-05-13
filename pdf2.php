@@ -4,7 +4,7 @@ include_once "vendor/autoload.php";
 use Dompdf\Dompdf;
 
 $imgname = $_GET['name1'];
-$imgnamerotate = $_GET['name2'];
+$imgnamerotate90 = $_GET['name2'];
 
 // reference the Dompdf namespace
 
@@ -17,19 +17,25 @@ $divimg = "
 <head>
     <title>Hello, world!</title>
     <style>
-   
+.container-fluid{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+
 table {
     border-collapse: collapse;
-    
-    
-    
-    
+    margin:1rem;
+    background-color:transparent
 }
+
 th, td {
-    
     border: 1px solid black;
     padding: 2mm;
-    
+
 }
 .norm {
     width: 40mm;
@@ -43,7 +49,8 @@ th, td {
 </style>
 </head>
 <body>
-<table >
+    <div class='container-fluid'>
+        <table >
     <tbody>
         <tr >
             <td ><img src='src/uploads/$imgname' class='norm'></td>
@@ -52,7 +59,7 @@ th, td {
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
-            
+
         </tr>
         <tr >
             <td ><img src='src/uploads/$imgname' class='norm'></td>
@@ -61,7 +68,7 @@ th, td {
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
-            
+
         </tr>
         <tr >
             <td ><img src='src/uploads/$imgname' class='norm'></td>
@@ -70,19 +77,20 @@ th, td {
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
             <td ><img src='src/uploads/$imgname' class='norm'></td>
-            
+
         </tr>
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
     </tbody>
 </table>
+    </div>
 </body>
 </html>";
 $dompdf->loadHtml($divimg);
